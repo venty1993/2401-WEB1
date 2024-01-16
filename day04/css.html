@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 가장 많이 사용하고 유용한 형태 -->
+    <!-- html과 css를 완전히 분리한 형태로 재사용이 용이하다. -->
+    <!-- 일관된 디자인을 주로 하는 웹디자인 특성상 재사용이 용이한것은 굉장히 큰 장점 -->
+    <link rel="stylesheet" href="example.css">
+
+
+    <!-- 위의 방법보다 재사용성이 떨어지는 방법 -->
+    <!-- html 문서 내에 css가 들어가는 방법으로, 다양한 예제파일을 많이 만들어야하는 수업 특성상 -->
+    <!-- 아래 방법으로 작성하는것이 파일 관리에 용이하므로 아래 방식 채택 -->
+    <!-- 실제 작업은 위 방법으로 해야합니다. -->
+    <style>
+        /* css를 작성 */
+        p{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 인라인 스타일 -->
+    <!-- 재사용이 불가능하다. -->
+    <!-- 아래방식으로 모든 디자인을 작성하게되면 재사용해야하는 부분도 일일이 모두 작성해야한다. -->
+    <!-- 일반적인 웹디자인에서는 가장 기피하는 방식 -->
+    <p style="color: red;">안녕하세요</p>
+</body>
+</html>

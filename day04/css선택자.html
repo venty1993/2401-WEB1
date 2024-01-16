@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #김철수 {
+            color: blue;
+        }
+
+        .영업팀{
+            font-size: 24px;
+        }
+
+        p.대리 {
+            color: red;
+        }
+
+        .인사팀 {
+            font-size: 12px;
+        }
+
+        .대리 {
+            color: brown;
+        }
+
+        .과장 {
+            font-size: 48px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    1. id 선택자 (#) : 우선순위 높음!
+     - 한 문서에 딱 하나만 존재할수 있는 선택자
+     - 한 태그에 하나까지만 넣을수 있다
+
+    2. class 선택자 (.)
+     - 한 문서에 여러개 존재할수 있는 선택자
+     - 한 태그가 여러 클래스를 동시에 가질 수 있다
+     - 여러 태그가 하나의 클래스를 같이 가질 수 있다.
+
+    3. 태그 선택자
+     - HTML 태그를 활용하는 선택자
+
+
+    <p id="김철수" class="영업팀 대리">김철수입니다</p>
+    <p id="박영희" class="영업팀 사원">박영희입니다</p>
+    <p id="홍길동" class="인사팀 대리">홍길동입니다</p>
+    <p id="박복자" class="인사팀 과장">박복자입니다</p>
+</body>
+</html>

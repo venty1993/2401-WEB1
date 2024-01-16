@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 임시링크 -->
+    <a href="#">텍스트</a>
+    <!-- 기본적인 사용방법 -->
+    <a href="https://naver.com">네이버</a>
+
+
+    <!-- alt + 방향키 위아래로 줄단위 위치변경 가능 -->
+
+
+    <!-- line12와 똑같이 작동한다. -->
+    <a href="https://naver.com" target="_self">셀프(기본값)</a>
+
+    <!-- 새로운 탭을 열어 페이지를 로드한다. -->
+    <a href="https://naver.com" target="_blank">블랭크</a>
+
+    <!-- iframe 태그와 함께 사용해야하는 속성으로 -->
+    <!-- iframe의 부모 페이지에 로드한다. -->
+    <a href="https://naver.com" target="_parent">parent</a>
+
+    <!-- iframe이 2중 이상 중복되어있을때 사용할수 있다. -->
+    <!-- 최상위 웹페이지에 로드한다. -->
+    <a href="https://naver.com" target="_top"></a>
+
+    <!-- iframe태그는 웹사이트 안에 다른 웹사이트를 넣을때 사용함. -->
+    <!-- 일반적으로 구글 애드센스나 유튜브 영상 공유등에서 볼 수 있는 태그 -->
+    <iframe src="iframe.html" frameborder="1"></iframe>
+
+    <!-- 유튜브 영상 가져오기 -->
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/3xlDU4Cc2hg" title="[2023 AFC 카타르 아시안컵] 2023 AFC 카타르 아시안컵 중국 vs 타지키스탄 풀 하이라이트" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <!-- 전화앱으로 연결 -->
+    <a href="tel:114">114에 전화하기</a>
+    <!-- 문자 앱으로 연결 -->
+    <a href="sms:010-1234-5678">문자메세지 보내기</a>
+    <!-- 메일 앱으로 연결 -->
+    <a href="mailto:admin@sbsart.com">관리자에게 메일 보내기</a>
+    
+
+</body>
+</html>
