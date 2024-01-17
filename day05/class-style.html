@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/reset.css">
+    <style>
+        a {
+            color: black;
+            /* 밑줄 없애기 */
+            text-decoration: none;
+        }
+
+        .text-maincolor{
+            color: rgb(95, 157, 95);
+        }
+
+        .text-pointcolor {
+            color: red;
+        }
+
+        
+    </style>
+</head>
+<body>
+    [5-11]
+
+    <h1>스마트폰 웹 디자인</h1>
+    <!-- ctrl + D : 같은 텍스트 복수 선택 -->
+    <h2 class="text-maincolor">Smartphone Web Design</h2>
+    <p class="text-maincolor">스마트폰 가입자가 <span class="text-pointcolor">급속히</span> 증가하는...</p>
+    <!-- CSS에는 상속되는 속성과 상속되지 않는 속성이 있다. -->
+    <!-- text 관련 태그는 거의다 상속 된다. (color도 상속됨) -->
+    <!-- 하지만 상속받은 속성은 우선순위가 낮다. -->
+
+    <a href="#">여기를 누르면 이동됩니다</a>
+
+    <!-- 아래와같은경우 a태그는 p태그로부터 color:green을 상속받지만 -->
+    <!-- a태그 자체에 color:black이 지정되어있기때문에 -->
+    <!-- 우선순위상 검은색 글씨로 나타나게된다. -->
+    <p class="text-maincolor">내용을 자세히 확인하려면 <a href="#">여기</a>를 클릭하세요</p>
+
+    <!-- 이렇게 지정해주면 초록색 글씨가 된다! -->
+    <p class="text-maincolor">내용을 자세히 확인하려면 <a href="#" class="text-maincolor">여기</a>를 클릭하세요</p>
+
+    <!-- id선택자는 이후 기능상 필요할때 사용하고 일단 지금은 class와 tag만 사용합니다 -->
+</body>
+</html>
