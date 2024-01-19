@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }    
+
+        div {
+            background-color: pink;
+            height: 100px;
+
+            margin: 16px;
+        }
+
+        .box-px {
+            width: 200px;
+        }
+
+        .box-1000px {
+            width: 1000px;
+        }
+
+        .box-50per {
+            width: 50%;
+        }
+
+        .inner-box-50per {
+            width: 50%;
+            background-color: orange;
+            margin: 0;
+        }
+
+        .inner-height-50per{
+            height: 50%;
+            background-color: red;
+        }
+
+        .my-video {
+            width: 100vw;
+            height: 56.25vw
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 제일 기본이 되는 고정값 -->
+    <!-- 다른 컨텐츠의 영향을 안받는 값이라 어려울게 없다 -->
+    <div class="box-px">200픽셀</div>
+    <div class="box-1000px">1000px</div>
+
+    <!-- 비율에 따라 크기가 변하는 값 -->
+    <!-- 기준은 해당 컨텐츠의 부모의 크기이다. -->
+    <div class="box-50per">50%</div>
+
+    <!-- body가 1000px이면? -->
+
+    <!-- div.box50per 는 500px -->
+    <div class="box-50per">
+        <!-- div.inner-box-50per는 250px이 되겠죠! -->
+        <div class="inner-box-50per">이너 50%</div>
+    </div>
+
+    <!-- 웹은 세로로 길어지고 가로로는 제한된 구조 -->
+    <!-- 가로(width)에 %를 주는건 전혀 문제가 안된다 -->
+    <!-- 하지만 세로(height)에 크기를 줄때는 고민을 좀 해봐야한다. -->
+
+    <!-- 컨텐츠가 많아지더라도 높이가 늘어나지 않는 (예를들어 쇼핑몰 상품) 컨텐츠에는 -->
+    <!-- height를 고정값(px)로 줘도 괜찮다. -->
+    <!-- 하지만 일반적인 컨텐츠는 내용이 늘어남에 따라 같이 height도 커져야하기 때문에 -->
+    <!-- 일반적으로 고정된 height를 주는건 문제가 발생할 여지가 있다. -->
+
+    <!-- 그럼 가변값(%)는 어떨까? -->
+    <!-- %는 부모 컨텐츠를 기준으로 크기가 정해진다 -->
+    <!-- height: % 값을 줄 컨텐츠의 부모, 조상에 height값이 없다면 결국 body를 기준으로 계산이 될텐데 -->
+    <!-- body는 height : auto로 되어있다. -->
+    <!-- 애초에 기준이 없기때문에 height: 100% 같은 속성은 제대로 작동하지 않을때가 굉장히 많다. -->
+    <!-- 적용이 될때는 어떤때일까? -->
+    <!-- 부모컨텐츠에 height가 정해져있을때. -->
+
+    <div class="box-50per">
+        <div class="inner-height-50per">
+            이너 높이 50%
+        </div>
+    </div>
+
+
+
+    <!-- vw, vh -->
+    <!-- viewport width, viewport height -->
+    <!-- 백분율값으로 쓰게 되고, height : 100vh 라고 쓰게되면 브라우저 높이만큼 커진다. -->
+    <!-- width : 100vw. 가로에 꽉 차는 크기.-->
+    <!-- 아쉬운부분은 스크롤바의 크기는 인식하지 못해 종종 스크롤바만큼 넘치곤 한다. -->
+    
+    <!-- 재미있는게, 같은 속성에만 영향을 받는 %와는 다르게(height: 100% 하면 부모의 height에만 영향을 받음) -->
+    <!-- height : 50vw (높이를 뷰포트 가로 50%만큼 설정) -->
+
+    <!-- 위같은 설정은 일반적이진 않으나 특정상황에서 굉장히 유용하게 쓸수 있는데 -->
+    <!-- 유튜브 동영상 넣을때 굉장히 유용하다... -->
+
+    <iframe class="my-video" src="https://www.youtube.com/embed/yGGHMG_7fgg" title="[洋楽playlist] 自己肯定感を上げるポジティブ洋楽プレイリスト - Good Month - Morning Routine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <!-- 예를 들면 이렇습니다 -->
+
+
+
+
+
+
+
+</body>
+</html>
