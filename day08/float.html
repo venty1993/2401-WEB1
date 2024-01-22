@@ -10,16 +10,17 @@
             padding: 0;
         }
 
-        .pink-box {
+        .box{
             width: 200px;
             height: 200px;
+        }
+
+        .pink-box {
             background-color: pink;
             float: left;
         }
 
         .red-box {
-            width: 200px;
-            height: 200px;
             background-color: red;
             float: left;
         }
@@ -33,27 +34,30 @@
         /* 옛날에 이런걸 썼구나 정도로만 알고계십쇼..!(굳이 열심히 외우지 않아도 된다는 뜻) */
 
         .blue-box {
-            width: 200px;
-            height: 200px;
             background-color: blue;
+
+            clear: both;
+            float: right;
         }
 
         .green-box {
-            width: 200px;
-            height: 200px;
             background-color: green;
+            float: right;
         }
+
+        /* clear 속성을 사용하면 이전 태그들의 float와 겹치는것을 방지할수 있다. */
+        /* float: right 속성은 태그를 오른쪽으로 정렬하지만 순서가 반대로 바뀌게된다. */
 
 
     </style>
 </head>
 <body>
-    <div class="pink-box"></div>
-    <div class="red-box"></div>
+    <div class="pink-box box"></div>
+    <div class="red-box box"></div>
 
 
-    <div class="blue-box"></div>
-    <div class="green-box"></div>
+    <div class="blue-box box"></div>
+    <div class="green-box box"></div>
 
     <!-- 
         div.pink-box
