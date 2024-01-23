@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .flex-box {
+            display: flex;
+        }
+
+        .box100 {
+            width: 100%;
+            height: 100px;
+
+            background-color: red;
+        }
+
+        .box50 {
+            width: 50%;
+            height: 100px;
+
+            background-color: pink;
+        }
+
+        .box10 {
+            width: 10%;
+            height: 100px;
+            
+            background-color: coral;
+        }
+
+        .flex-box2 {
+            display: flex;
+            gap: 12px;
+            width: 1200px;
+            background-color: black;
+        }
+
+
+        .float-box {
+            background-color: black;
+            width: 1200px;
+            overflow: hidden;
+        }
+
+        .float-5div {
+            width: 230.4px;
+            height: 100px;
+            background-color: green;
+            margin-right: 12px;
+
+            float: left;
+        }
+
+        .no-margin {
+            margin: 0;
+        }
+
+        .flex-box-wrap {
+            /* width: 1200px; */
+            display: flex;
+
+            gap: 8px;
+
+            background-color: #999;
+
+            /* 넘치는 컨텐츠 줄이는 대신에 줄바꿈하기 */
+            flex-wrap: wrap;
+        }
+
+        .product {
+            /* 이렇게 고정값으로 작성하게 되면 */
+            /* 부모컨텐츠 크기가 달라졌을때 */
+            /* 망가지기 쉽다. */
+            /* width: 400px; */
+
+            /* 계산식을 안다면 다음과같이 쓰는게 좋습니다. */
+
+            width: calc((100% - (8px * 2)) / 3);
+
+
+
+            height: 100px;
+            background-color: pink;
+
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+        /* flex는 자식요소들의 크기를 유연하게 설정 */
+        /* 자식이 커서 부모를 넘칠때 */
+        /* 비율에 맞게 자동으로 줄여준다. */
+    </style>
+</head>
+<body>
+    <div class="flex-box">
+        <div class="box100"></div>
+        <div class="box50"></div>
+        <div class="box10"></div>
+    </div>
+
+    <div class="flex-box2">
+        <div class="box100"></div>
+        <div class="box100"></div>
+        <div class="box100"></div>
+        <div class="box100"></div>
+        <div class="box100"></div>
+    </div>
+
+    <!-- 플로트 정렬을 사용해 위와 똑같이 만들어봅시다! -->
+    <div class="float-box">
+        <div class="float-5div"></div>
+        <div class="float-5div"></div>
+        <div class="float-5div"></div>
+        <div class="float-5div"></div>
+        <div class="float-5div no-margin"></div>
+    </div>
+
+    <div class="flex-box-wrap">
+        <div class="product">1</div>
+        <div class="product">2</div>
+        <div class="product">3</div>
+        <div class="product">4</div>
+        <div class="product">5</div>
+        <div class="product">6</div>
+    </div>
+</body>
+</html>
