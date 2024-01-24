@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            width: 800px;
+            align-items: center;
+
+        }
+
+        .user-thumb {
+            width: 80px;
+            height: 80px;
+            background-color: gray;
+            border-radius: 50%;
+
+            flex-shrink: 0;
+            /* shrink : 수축 */
+            /* 1은 한다 0은 안한다. */
+            /* flex-shrink : 0 = 수축 안한다 */
+            /* 위 속성으로 컨텐츠가 수축하는것을 막을 수 있다. */
+
+            /* grow와 동일하게 비율로 계산해서 수축하게 할 수 있다. */
+
+
+        }
+
+        .meta-container {
+            width: 100%;
+            
+            /*
+            flex-grow 속성은 컨텐츠의 크기를 늘려 부모컨텐츠의
+            빈칸을 채워주는 속성.
+            
+            여러 개체에 flex-grow 속성이 들어가면
+            비율로 크기를 나눠 가진다.
+
+            A: flex-grow:1;
+            b: flex-grow:3; 일때
+            A는 25%, b는 75%를 차지하게 된다.
+            
+            flex-grow를 안가진 다른 컨텐츠가 있을때는
+            해당 컨텐츠를 제외한 나머지 영역을 나눠가진다.
+
+            flex-grow: 1; 
+            */
+        }
+        
+        .user-name {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .user-subs-count {
+            font-size: 18px;
+        }
+
+        .subs-button {
+            border: none;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+
+            padding: 8px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 플렉스의 자식요소들은 기본적으로 넘칠때 수축하는 성질이 있다. -->
+    <!-- = 특정 속성을 주면 수축하지 않게끔 할수있다. -->
+
+    <!-- display: flex -->
+    <!-- flex : 이런 속성도 있습니다 -->
+
+    <!-- display:flex는 부모에게 적용 하는 속성이고 -->
+    <!-- flex: 속성은 자식에게 직접 적용하는 속성 입니다. -->
+
+
+    <div class="container">
+        <div class="user-thumb">
+        </div>
+        <div class="meta-container">
+            <h3 class="user-name">컨텐츠 크리에이터</h3>
+            <p class="user-subs-count">구독자 1,999명</p>
+        </div>
+        <button class="subs-button">구독하기</button>
+    </div>
+
+
+    <!-- flex 관련 속성 -->
+    <!-- shrink, grow, basis -->
+
+    <!-- shrink : 수축 -->
+    <!-- grow : 늘어남 -->
+    <!-- basis : 기본 크기 지정 -->
+    <!-- 그러면 flex-basis랑 width의 차이가 뭔가? -->
+
+    <!-- 
+        case1. flex-direction이 row가 아니라 column일때
+     -->
+
+    <!-- 
+        case2. width는 무조건 고정, flex-basis는 최솟값
+    -->
+
+</body>
+</html>

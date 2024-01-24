@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 500px;
+            align-items: center;
+        }
+
+        .flex-item {
+            flex-basis: 100%;
+            background-color: red;
+        }
+
+
+        /* 반응형으로 플렉스 방향 바꾸는 작성 */
+        @media screen and (max-width: 800px) {
+            .container {
+                flex-direction: column;
+            }
+            
+        }
+
+        .test-container {
+            display: flex;
+        }
+        
+        .basis200 {
+            flex-basis: 200px;
+            border: 3px solid green;
+        }
+
+        .width200 {
+            min-width: 200px;
+            border: 3px solid blue;
+        }
+
+        .box {
+            width: 300px;
+            height: 100px;
+            background-color: red;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-item">플렉스 아이템입니다</div>
+    </div>
+
+    <div class="test-container">
+        <div class="basis200">
+            <div class="box">basis 내부의 box</div>
+        </div>
+        <div class="width200">
+            <div class="box">width 내부의 box</div>
+        </div>
+    </div>
+</body>
+</html>
