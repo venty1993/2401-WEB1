@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    * : 전체 선택자. 별표(애스터리스크) 곱하기라는 뜻도있지만, 선택자or이름 적인 관점에서는 '모든것'을 뜻합니다. 우리가 자주하던 * 안에 padding 과 margin 을 0으로 만드는 작성은
+    앞으로 작성될 모든 태그들한테 다 적용하겠다 라는 말과 똑같습니다.
+
+    tag ID class -> 스킵
+
+
+    .container.contents
+    <div class="container content">여기에 적용</div>
+
+    .container > .contents
+    <div class="container">
+        <div class="contents">여기에 적용</div>
+        <div class="inner">
+            <div class="contents">여기엔 적용 안됨</div>
+        </div>
+    </div>
+
+    .container .contents
+    <div class="container">
+        <div class="contents">여기에 적용</div>
+        <div class="inner">
+            <div class="contents">여기에도 적용이 된다.</div>
+        </div>
+    </div>
+
+    .container, .contents
+    <div class="container">여기에 적용</div>
+    <div class="contents">여기에 적용</div>
+
+    .container{width:10px} 
+    .contents{width:10px}
+
+    위와 아래는 같다.
+
+    .container , .contents {
+        width:10px;
+    }
+
+
+
+</body>
+</html>

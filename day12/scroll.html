@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .scroll-box {
+            overflow: scroll;
+            /* 이런식으로 overflow 자체에 스크롤 속성을 넣으면
+            x, y 양방향 스크롤이 생기는 문제가 있다. */
+            width: 200px;
+            height: 200px;
+        }
+
+        .scroll-y-box {
+            width: 200px;
+            height: 200px;
+            overflow-y: auto;
+        }
+
+        .scroll-y-box::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: pink;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="scroll-box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur necessitatibus odio, iure non iusto vel! Labore necessitatibus debitis error temporibus molestiae! Dicta blanditiis, dolorum numquam ab doloribus ex tempora beatae!
+    </div>
+
+    <div class="scroll-y-box">
+        consectetur adipisicing elit. Mctetur adipisicing elit. Mctetur adipisicing elit. Mctetur adipisicing elit. Mctetur adipisicing elit. Mctetur adipisicing elit. Mctetur adipisicing elit. Maxime, neque. Laborum ab inventore ipsam facilis praesentium labore vero doloribus quasi quos! Quis ullam aspernatur dolorem? Distinctio quas odio nisi aliquam.
+    </div>
+
+</body>
+</html>
