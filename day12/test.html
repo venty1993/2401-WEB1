@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .img-container {
+            width: 60%;
+            order: 1;
+        }
+
+        .test {
+            width: 700px;
+            height: 700px;
+        }
+
+        .product {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            flex-direction: column;
+            text-align: center;
+            order: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <h2>아잉패드</h2>
+            <p>비싸다</p>
+            <p>999,999,999원</p>
+        </div>
+        <div class="img-container">
+            <img src="ipad_hero__d0tgmaq6shm6_large.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

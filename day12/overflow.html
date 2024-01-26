@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            padding: 10px;
+            gap: 30px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+
+        .flow-contents {
+            height: auto;
+        }
+        .hidden-contents {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h4>콘텐츠의 양이 일정</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta corporis quaerat maxime ratione corru maxime ratione corru maxime ratione corrupti qui fugit ut cum laboriosam sit! Possimus, iusto eveniet fugiat aliquam</p>
+        </div>
+        <div class="box">
+            <h4>콘텐츠의 양이 많거나 유동적일때 흘러넘침</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet quod explicabo molestias? Magni, autem itaque eveniet alias tenetur sunt mollitia maxime in vitae. Ipsum, ducimus natus.  Sit eveniet reprehenderit fuga! Sit eveniet reprehenderit fuga!</p>
+        </div>
+        <div class="box flow-contents">
+            <h4>콘텐츠의 양에 따라서 높이가 늘어남</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptas repudiandae ad nisi eaque perspiciatis maiores, excepturi aperiam sapiente sit quisquam voluptatum tempore magni eum laboriosam quasi ipsam corrupti! Exercitationem.</p>
+        </div>
+        <div class="box hidden-contents">
+            <h4>박스의 지정된 높이만큼만 콘텐츠가 보임</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum officiis distinctio voluptatibus facere alias voluptas quis quaerat doloribus, molestias, nihil necessitatibus possimus cumque architecto enim hic reiciendis blanditiis, eveniet corporis?</p>
+        </div>
+    </div>
+</body>
+</html>
