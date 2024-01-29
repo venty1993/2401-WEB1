@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <나>
+        <첫째 class="변호사"></첫째>
+        <둘째 class="검사"></둘째>
+    </나>
+
+    .변호사:first-child - 적용
+
+    .검사:first-child - 적용X
+
+    .변호사:first-of-type - 적용
+
+    .검사:first-of-type - 적용
+
+    <div class="container">
+        <p>1</p>
+        <p>4</p>
+        <span>3</span>
+        <p>4</p>
+        <span>5</span>
+        <span>2</span>
+    </div>
+
+    p:first-child : 1
+    span:first-child : x
+
+    p:last-child : x
+    span:last-childe : 2
+
+    span:first-of-type : 3
+
+    p:nth-child(2n) : 4
+    span:nth-of-type(2n) : 5
+</body>
+</html>
