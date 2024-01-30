@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .link-add-arrow {
+            text-decoration: none;
+            color: #222;
+        }
+
+        .link-add-arrow:hover {
+            text-decoration: underline;
+        }
+
+        .link-add-arrow::after {
+            /* 가상요소 선택자에서 이속성은 반드시 필요합니다. */
+            content: '';
+            /* before와 after는 inline이 기본 속성이라 모양을 만들때에는 inline-block이나 block을 써줘야 작동한다. */
+            display: inline-block;
+
+            width: 8px;
+            height: 8px;
+            border: 2px solid #222;
+
+            transform: rotate(-45deg);
+            border-top: none;
+            border-left: none;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <a class="link-add-arrow" href="#">Buy now</a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <a href="#" class="link-add-arrow new">새로만든 구매하기</a>
+
+    <!-- <div class="test"></div> -->
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* margin: 0;
+            padding: 0; */
+        }
+
+        li {
+            list-style: none;
+        }
+
+        #view-list {
+            display: none;
+        }
+
+        #view-list:checked + ul {
+            height: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <span>아이디</span><input type="text"> 
+
+    <br>
+    
+    <label for="input-id">아이디</label><input id='input-id' type="text">
+    
+    <br>
+
+    <label for="input-check">체크하기</label><input type="checkbox" name="" id="input-check">
+
+
+    <hr>
+
+    <label for="view-list">메뉴제목</label>
+    <input type="checkbox" name="" id="view-list">
+    <ul class="list">
+        <li class="list-content">메뉴</li>
+        <li class="list-content">메뉴</li>
+        <li class="list-content">메뉴</li>
+        <li class="list-content">메뉴</li>
+        <li class="list-content">메뉴</li>
+    </ul>
+</body>
+</html>

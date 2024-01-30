@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 650px;
+            height: 300px;
+            background-color: yellow;
+            overflow: hidden;
+            /* 애니메이션 넣어보기 */
+            transition: 1s;
+        }
+
+        /* input[type=checkbox]:checked + div{
+            height: 0;
+        } */
+
+        .hide-check:checked + div{
+            height: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <input class="hide-check" type="checkbox" name="" id="">
+    <div>
+        <h2>제목제목</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maxime qui dolores, saepe rerum minima laborum nulla aut placeat enim error earum hic. Dolorum, et. Voluptatem suscipit hic eligendi vero!</p>
+    </div>
+</body>
+</html>
