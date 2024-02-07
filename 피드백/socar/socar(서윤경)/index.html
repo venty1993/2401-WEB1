@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOCAR 홈페이지 구현하기</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 60px;
+            margin-bottom: 80px;
+        }
+
+        header {
+            padding:  0 32px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            /* padding: 0 48px; */
+        }
+        .logo, .hamburger{
+            font-weight: bold;
+            font-size: 48px;
+        }
+
+        .main {
+            display: flex;
+            /* flex-direction: column; */
+            width: 100%;
+            /* height: 830px; */
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-image: url(img/main_visual_fullscreen.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* margin-bottom: 80px; */
+        }
+
+        .show {
+            font-weight: bold;
+            text-align: center;
+            font-size: 56px;
+        }
+
+        section {
+            background-color: pink;
+            padding: 0 32px;
+        }
+
+        .section-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding-top: 80px;
+            
+        }
+
+        .content {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .mungu {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">SOCAR</div>
+            <div class="hamburger">=</div>
+        </div>
+    </header>
+    <main class="main">
+        <h1 class="show">
+                차가 필요한
+            <br>
+                모든 순간, 쏘카
+        </h1>
+    </main>
+    <section>
+        <div class="section-container">
+            <div class="content-container">
+                <h2 class="content-heading">
+                        24시간 언제나
+                </h2>
+                <p>
+                        한밤중이나 주말에도 스마트폰으로
+                        <br>
+                        시간에 구애받지 않고
+                        <br>
+                        쏘카와 함께 이동하세요.
+                </p>
+                <img src="img/usp_a.jpg" alt="">
+            </div>
+
+            <h2 class="content">
+                원하는 곳에서
+            </h2>
+            <p>
+                내 주변 3분 거리 쏘카존에서
+                <br>
+                혹은 내가 있는 곳으로 쏘카를 불러
+                <br>
+                어디서나 편하게 출발하세요.
+            </p>
+            <img src="img/usp_b.jpg" alt="">
+
+                <h2 class="content">
+                    필요한 시간만큼
+                </h2>
+                <p>
+                        간단한 장보기부터 주말여행까지
+                    <br>
+                        10분 단위로 원하는 만큼만 이용하세요.
+                </p>
+                <img src="img/usp_c.jpg" alt="">
+
+                    <h2 class="content">
+                        다양한 차종을
+                    </h2>
+                <p>
+                    연인과의 드라이브부터 가족 캠핑까지
+                    <br>
+                        상황에 맞게 50여 종의 차량을
+                    <br>
+                        선택해서 이용하세요.
+                </p>
+                <img src="img/usp_d.jpg" alt="">
+
+                <p class="mungu">
+                        9,409,184명의 회원이 쏘카와 함께하고 있습니다.
+                    <br>
+                        지금 바로 쏘카 드라이브를 시작하세요.
+                </p>
+            </div>
+        </section>
+    <footer>
+
+    </footer>
+</body>
+</html>
