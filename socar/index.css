@@ -111,3 +111,96 @@ section {
     color: #999;
     margin-bottom: 48px;
 }
+
+#with-socar {
+    height: 400px;
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 36px;
+    color: rgb(136, 136, 136);
+    font-weight: bold;
+    line-height: 120%;
+    position: relative;
+    overflow: hidden;
+}
+
+#with-socar .point {
+    color: #0bb8ff;
+}
+
+.rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0bb8ff;
+    transform: skewX(-30deg) translateX(70%);
+
+}
+
+footer {
+    background-color: #28323c;
+}
+
+.footer-container {
+    max-width: 1000px ;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.sns-container {
+    display: flex;
+    gap: 8px;
+}
+
+.sns-container li {
+    width: 30px;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-menu a {
+    color: #c5c8ce;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .point {
+    color: white;
+}
+
+.footer-info {
+    display: flex;
+    color: #646f7c;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.info-container {
+    width: 50%;
+}
+
+.info-container a {
+    color: white;
+    font-weight: bold;
+}
+
+.info-container dl {
+    display: flex;
+}
+
+.info-container dt::after {
+    content: '.';
+    margin-right: 4px;
+}
